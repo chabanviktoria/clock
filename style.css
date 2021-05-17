@@ -94,9 +94,7 @@
     height: 110px;
     border-radius: 5px;
     z-index: 100;
-    transform-origin: 100% 100%;
-    transition-timing-function: ease;
-    transition-duration: 3s;
+    transform-origin: 50% 100%;
     animation: animation 86400s linear 3s infinite forwards;
 }
 
@@ -110,9 +108,7 @@
     background-color: rgb(33, 112, 122);
     border-radius: 5px;
     z-index: 50;
-    transform-origin: 100% 100%;
-    transition-timing-function: ease;
-    transition-duration: 3s;
+    transform-origin: 40% 100%;
     animation: animation 3600s linear 3s infinite forwards;
 }
 
@@ -125,9 +121,7 @@
     height: 160px;
     background-color: rgb(81, 196, 224);
     border-radius: 5px;
-    transform-origin: 100% 100%;
-    transition-timing-function: ease;
-    transition-duration: 3s;
+    transform-origin: 40% 100%;
     animation: animation 60s linear 3s infinite forwards;
 }
 
