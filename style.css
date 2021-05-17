@@ -2,15 +2,16 @@
     margin: 0 auto;
     max-width: 600px;
     min-height: 600px;
-    border: 5px solid #0d7d91;
+    border: 5px solid #008fa8;
     border-radius: 50%;
     position: relative;
+    background-image: radial-gradient(at center hsl(191, 92%, 39%), #008fa8 );
 }
 
 .number {
     font-size: 90px;
     position: absolute;
-    color: #0d7d91;
+    color: #036a7c;
 }
 .one {
     top: 8%;
@@ -96,10 +97,7 @@
     transform-origin: 100% 100%;
     transition-timing-function: ease;
     transition-duration: 3s;
-}
-
-.hour:hover {
-    transform: rotate(60deg);
+    animation: animation 86400s linear 3s infinite forwards;
 }
 
 .minute {
@@ -115,10 +113,7 @@
     transform-origin: 100% 100%;
     transition-timing-function: ease;
     transition-duration: 3s;
-}
-
-.minute:hover {
-    transform: rotate(90deg);
+    animation: animation 3600s linear 3s infinite forwards;
 }
 
 .second {
@@ -133,8 +128,15 @@
     transform-origin: 100% 100%;
     transition-timing-function: ease;
     transition-duration: 3s;
+    animation: animation 60s linear 3s infinite forwards;
 }
 
-.second:hover {
-    transform: rotate(120deg);
+@keyframes animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
