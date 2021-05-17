@@ -5,7 +5,7 @@
     border: 5px solid #008fa8;
     border-radius: 50%;
     position: relative;
-    background-image: radial-gradient(at center hsl(191, 92%, 39%), #008fa8 );
+    background-image: radial-gradient(at center, #05718a, #89d6e4, #e6f1f3);
 }
 
 .number {
